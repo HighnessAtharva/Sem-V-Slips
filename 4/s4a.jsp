@@ -12,10 +12,10 @@ n = n/10;
 }
 if(no == num)
 {
-System.out.println("\nArmstrong Number");
+out.println("\nArmstrong Number");
 }
 else
 {
-    System.out.println("Not Armstrong");
+    out.println("Not Armstrong");
 }
 %>
