@@ -14,7 +14,8 @@ class s6bclient
         while(true)
         {
             System.out.println("Client:");
-            dos.writeUTF(br.readLine()); //send response to server.            System.out.println("Server:");
+            dos.writeUTF(br.readLine()); //send response to server.            
+            System.out.println("Server:");
             System.out.println(dis.readUTF()); //Received from server.        }
     }
 }
