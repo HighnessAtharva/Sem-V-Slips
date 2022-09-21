@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 11, 2022 at 07:50 AM
+-- Generation Time: Sep 21, 2022 at 12:53 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.12
 
@@ -20,6 +20,18 @@ SET time_zone = "+00:00";
 --
 -- Database: `demo`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `account`
+--
+
+CREATE TABLE `account` (
+  `ano` int(11) NOT NULL,
+  `type` varchar(20) NOT NULL,
+  `bal` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -45,7 +57,8 @@ INSERT INTO `customer` (`c_id`, `c_name`, `c_address`, `c_contact`) VALUES
 (123, '', 'asd', 34343),
 (1, '', 'asdk asdjnjas', 232),
 (12, '', 'cd \"c:\\xampp\\tomcat\\webapps\\ROOT\\Sem5Slips\\2\"', 343),
-(12, 'asd', 'asdasd', 432);
+(12, 'asd', 'asdasd', 432),
+(2, 'ahashd', 'pune', 1111111111);
 
 -- --------------------------------------------------------
 
@@ -77,7 +90,50 @@ INSERT INTO `employees` (`id`, `last_name`, `first_name`, `email`, `department`,
 (9, 'Thomas', 'Susan', 'susan.thomas@foo.com', 'Legal', '80000.00'),
 (10, 'Davis', 'John', 'john.davis@foo.com', 'HR', '45000.00'),
 (11, 'Fowler', 'Mary', 'mary.fowler@foo.com', 'Computer Science', '65000.00'),
-(12, 'Waters', 'David', 'david.waters@foo.com', 'Legal', '90000.00');
+(12, 'Waters', 'David', 'david.waters@foo.com', 'Legal', '90000.00'),
+(16, 'jay', 'trainee', 'A@gmail.com', 'dept1', '10000.00'),
+(17, 'jayes', 'trainee', 'B@gmail.com', 'dept1', '10000.00'),
+(18, 'shail', 'trainee', 'C@gmail.com', 'dept1', '10000.00');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `hospital`
+--
+
+CREATE TABLE `hospital` (
+  `number` int(11) NOT NULL,
+  `name` varchar(20) NOT NULL,
+  `address` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `hospital`
+--
+
+INSERT INTO `hospital` (`number`, `name`, `address`) VALUES
+(1, 'ABC', 'ADDRESS FOR ABC'),
+(2, 'XYZ', 'ADDRESS FOR XYZ');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `students`
+--
+
+CREATE TABLE `students` (
+  `id` int(11) NOT NULL,
+  `name` varchar(20) NOT NULL,
+  `percentage` int(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `students`
+--
+
+INSERT INTO `students` (`id`, `name`, `percentage`) VALUES
+(12, 'sdf', 0),
+(23, 'alex', 34);
 
 -- --------------------------------------------------------
 
@@ -117,7 +173,7 @@ ALTER TABLE `employees`
 -- AUTO_INCREMENT for table `employees`
 --
 ALTER TABLE `employees`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
