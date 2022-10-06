@@ -1,40 +1,32 @@
 import java.net.*;
+
 import java.io.*;
 
-public class server
+class server
+
 {
-    public static void main(String args[])
+    public static void main(String args[]) throws Exception
+
     {
-        try
-        {
-            ServerSocket ss =new ServerSocket(2222);
-            System.out.println("Server is started");
-            while(true)
-            {
-                Socket s=ss.accept();
-                System.out.print("Connection request Received");
-
-                InputStream is=s.getInputStream();
-                InputStreamReader isr= new InputStreamReader(is);
-                BufferedReader br=new BufferedReader(isr);
-
-                OutputStream os=s.getOutputStream();
-                PrintWriter pw= new PrintWriter(os,true);
-                int no=br.read();
-                int fact=1,i=0;
-                while(no>i)
-                {
-                    fact=fact*no;
-                    no--;
-                }
-                pw.println(fact);
-                s.close();
-            }
-        }
-
-        catch(Exception e)
-        {
-            e.printStackTrace();
-        }
+        ServerSocket ss = new ServerSocket(3333);
+        Socket s = ss.accept();
+        DataInputStream din = new DataInputStream(s.getInputStream());
+        DataOutputStream dout = new DataOutputStream(s.getOutputStream());
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("server here..");
+        String str = "", str2 = "";
+        str = din.readUTF();
+        int n = Integer.parseInt(str);
+        System.out.println("given no is: " + n);
+        int f = 1;
+        for (; n > 0; n--)
+            f = f * n;
+        System.out.println("Factorial value is: " + f);
+        str2 = "Factorial value is: " + f;
+        dout.writeUTF(str2);
+        dout.flush();
+        din.close();
+        s.close();
+        ss.close();
     }
 }

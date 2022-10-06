@@ -1,31 +1,21 @@
-import  java.net.*;
+import java.net.*;
 import java.io.*;
 
-public class client
+class client
 {
-    public static void main(String args[])
-    {
-        try
-        {
-            Socket s = new Socket("localhost",2222);
-
-            InputStream is=s.getInputStream();
-            InputStreamReader isr= new InputStreamReader(is);
-            BufferedReader br=new BufferedReader(isr);
-
-            OutputStream os=s.getOutputStream();
-            PrintWriter pw= new PrintWriter(os,true);
-            int msg=6;
-            pw.println(msg);
-            msg=br.read();
-            System.out.println("factorial="+msg);
-            s.close();
-
-        }
-        catch (Exception e)
-        {
-            e.printStackTrace();
-        }
+    public static void main(String args[]) throws Exception {
+        Socket s = new Socket("localhost", 3333);
+        DataInputStream din = new DataInputStream(s.getInputStream());
+        DataOutputStream dout = new DataOutputStream(s.getOutputStream());
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("enter any number");
+        String str = "", str2 = "";
+        str = br.readLine();
+        dout.writeUTF(str);
+        dout.flush();
+        str2 = din.readUTF();
+        System.out.println(str2);
+        dout.close();
+        s.close();
     }
-
 }
