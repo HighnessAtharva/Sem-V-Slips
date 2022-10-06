@@ -73,6 +73,9 @@
     <Content Include="Slip2C.aspx" />
     <Content Include="Slip4C.aspx" />
     <Content Include="Slip5C.aspx" />
+    <Content Include="Slip6C.aspx" />
+    <Content Include="Slip7C.aspx" />
+    <Content Include="Slip8C.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -107,6 +110,27 @@
     </Compile>
     <Compile Include="Slip5C.aspx.designer.cs">
       <DependentUpon>Slip5C.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Slip6C.aspx.cs">
+      <DependentUpon>Slip6C.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Slip6C.aspx.designer.cs">
+      <DependentUpon>Slip6C.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Slip7C.aspx.cs">
+      <DependentUpon>Slip7C.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Slip7C.aspx.designer.cs">
+      <DependentUpon>Slip7C.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Slip8C.aspx.cs">
+      <DependentUpon>Slip8C.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Slip8C.aspx.designer.cs">
+      <DependentUpon>Slip8C.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

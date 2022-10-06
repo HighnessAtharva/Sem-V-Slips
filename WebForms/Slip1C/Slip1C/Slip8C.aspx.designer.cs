@@ -11,7 +11,7 @@ namespace Slip1C
 {
 
 
-    public partial class Slip2C
+    public partial class Slip8C
     {
 
         /// <summary>
@@ -49,5 +49,32 @@ namespace Slip1C
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl result;
+
+        /// <summary>
+        /// n2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl n2;
+
+        /// <summary>
+        /// Submit2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputSubmit Submit2;
+
+        /// <summary>
+        /// result2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl result2;
     }
 }
