@@ -5,26 +5,29 @@
     {
         int num = int.Parse(n1.Value);
         //string myname = Request.Form["uname"];
-        if (num >= 90)
+        if (num >= 80 && num<=100)
         {
-            result.InnerHtml = "You get Grade A";
+            result.InnerHtml = "Your Grade : <b> Distinction </b>";
         }
-        else if (num >= 80)
+        else if (num >= 60 && num<80)
         {
-            result.InnerHtml = "You get Grade B";
+            result.InnerHtml = "Your Grade : <b> First Class </b>";
         }
-        else if (num >= 70)
         {
-            result.InnerHtml = "You get Grade C";
+            result.InnerHtml = "Your Grade : <b> Second Class </b>";
         }
-        else if (num >= 50)
+        else if (num >= 40 && num<50)
         {
-            result.InnerHtml = "You get Grade D";
+            result.InnerHtml = "Your Grade : <b> Pass </b>";
         }
-        else
+        else if (num >= 0 && num<40)
         {
-            result.InnerHtml = "FAIL";
+            result.InnerHtml = "Your Grade : <b> FAIL </b>";
         }
+            else
+            {
+            result.InnerHtml = "Please enter a valid percentage";
+            }
 
     }
 </script>
@@ -40,7 +43,7 @@
     <form id="form1" runat="server">
         <div>
 
-            <input type="text" id="n1" runat="server" placeholder="Enter your percentage" />
+            <input type="number" id="n1" runat="server" placeholder="Enter your percentage" />
             <br />
             <input type="submit" value="Calculate" runat="server" id="btn1" onserverclick="calcGrade" />
             <br />

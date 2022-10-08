@@ -15,5 +15,7 @@ class Test{
             Console.WriteLine("Strings are of same length and equal");
         else
             Console.WriteLine("Strings are not equal");
+
+        Console.ReadLine();
     }
 }
