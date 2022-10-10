@@ -1,46 +1,54 @@
-// C# program to illustrate the above concept
 using System;
-
-// Base Class
-// public class init
-// {
-
-// }
-
-// Derived Class
-public class Accept 
+namespace Studytonight
 {
-    public String val;
-
-     Accept(){
-        Console.WriteLine("Enter a val");
-        val=Console.ReadLine();
-        return 0;
+    public class Parent
+    {
+        public void DisplayParentsAB()
+        {
+            Console.WriteLine("A and B are my parents");
+        }
     }
-
-
-}
-
-// Derived Class
-public class Display : Accept
-{
     
-     Display(String val):base(val)
+    public class ChildC: Parent
     {
-        Console.WriteLine("val is");
-        Console.WriteLine(val);
-        return 0;
+        string name;
+        public void accept(string childName){
+            this.name=childName;
+        }
+        public void Display()
+        {
+            Console.WriteLine("I am the child C. My name is {0}", this.name);
+        }
     }
-}
-
-class Driver
-{
-    static public void Main()
+    
+    public class ChildD: Parent
     {
-        Accept a= new Accept();
-        
+        string name;
+        public void accept(string childName){
+            this.name=childName;
+        }
+        public void Display()
+        {
+            Console.WriteLine("I am the child D. My name is {0}", this.name);
+        }
+    }
+    
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            ChildC c = new ChildC();
+            ChildD d = new ChildD();
+            
+            c.accept("Atharva");
+            c.Display();
+            c.DisplayParentsAB();  // accessing parent class
+            
+            Console.WriteLine();
 
-        Display d= new Display();
-        
+            d.accept("Aegon");
+            d.Display();
+            d.DisplayParentsAB();   // accessing parent class
+        }
     }
 }

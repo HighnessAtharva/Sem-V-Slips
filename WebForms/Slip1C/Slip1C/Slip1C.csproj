@@ -68,14 +68,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="Slip15D.aspx" />
+    <Content Include="Slip16D.aspx" />
+    <Content Include="Slip19D.aspx" />
     <Content Include="Slip1C.aspx" />
     <Content Include="Slip1C.html" />
+    <Content Include="Slip20D.aspx" />
     <Content Include="Slip2C.aspx" />
     <Content Include="Slip4C.aspx" />
     <Content Include="Slip5C.aspx" />
     <Content Include="Slip6C.aspx" />
     <Content Include="Slip7C.aspx" />
     <Content Include="Slip8C.aspx" />
+    <Content Include="Slip9C.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -83,12 +88,40 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Slip15D.aspx.cs">
+      <DependentUpon>Slip15D.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Slip15D.aspx.designer.cs">
+      <DependentUpon>Slip15D.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Slip16D.aspx.cs">
+      <DependentUpon>Slip16D.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Slip16D.aspx.designer.cs">
+      <DependentUpon>Slip16D.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Slip19D.aspx.cs">
+      <DependentUpon>Slip19D.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Slip19D.aspx.designer.cs">
+      <DependentUpon>Slip19D.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Slip1C.aspx.cs">
       <DependentUpon>Slip1C.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Slip1C.aspx.designer.cs">
       <DependentUpon>Slip1C.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Slip20D.aspx.cs">
+      <DependentUpon>Slip20D.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Slip20D.aspx.designer.cs">
+      <DependentUpon>Slip20D.aspx</DependentUpon>
     </Compile>
     <Compile Include="Slip2C.aspx.cs">
       <DependentUpon>Slip2C.aspx</DependentUpon>
@@ -131,6 +164,13 @@
     </Compile>
     <Compile Include="Slip8C.aspx.designer.cs">
       <DependentUpon>Slip8C.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Slip9C.aspx.cs">
+      <DependentUpon>Slip9C.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Slip9C.aspx.designer.cs">
+      <DependentUpon>Slip9C.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
