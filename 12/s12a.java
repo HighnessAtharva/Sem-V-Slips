@@ -18,7 +18,7 @@ public class s12a {
         Scanner sc=new Scanner(System.in);
         
        
-        stmt.executeUpdate(QUERY);
+        
         System.out.println("Table Created");
         System.out.println("Enter Tno");
         tno=sc.nextInt();

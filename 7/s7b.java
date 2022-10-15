@@ -4,7 +4,7 @@ import javax.servlet.http.*;
 import java.sql.*;
 public class s7b extends HttpServlet {
     public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
-        res.setCountentType("html/text");
+        res.setContentType("html/text");
         PrintWriter pw = res.getWriter();
         try {
             int roll = Integer.parseInt(req.getParameter("txtsno"));
@@ -23,7 +23,7 @@ public class s7b extends HttpServlet {
         }
 
     }
-    public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
-        doPost(req, res);
-    }
+    // public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
+    //     doPost(req, res);
+    // }
 }

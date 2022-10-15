@@ -2,17 +2,17 @@
 import java.sql.*;
 
 public class s16a {
-    // static final String DB_URL = "jdbc:mysql://localhost/demo";
-    // static final String USER = "root";
-    // static final String PASS = "";
+    static final String DB_URL = "jdbc:mysql://localhost/demo";
+    static final String USER = "root";
+    static final String PASS = "";
 
     public static void main(String[] args) throws ClassNotFoundException {
 
-        // try (Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
-        // Statement stmt = conn.createStatement();)
-        try {
-            Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
-            Connection conn = DriverManager.getConnection("jdbc:odbc:Test");
+        try (Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
+        Statement stmt = conn.createStatement();)
+        {
+            // Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+            // Connection conn = DriverManager.getConnection("jdbc:odbc:Test");
             String select_query = "select * from employees";
 
             // Creating prepared Statement

@@ -1,4 +1,4 @@
-/*<applet code= "signal.class" height="600" width="600"></applet>*/
+/*<applet code= "s17b.class" height="600" width="600"></applet>*/
 
 import java.awt.*;
 import java.applet.*;
@@ -17,26 +17,21 @@ public class s17b extends Applet implements Runnable {
 
     public void run() {
         try {
-            for (i = 24; i >= 1; i--) {
-                t.sleep(100);
-                if (i >= 16 && i < 24) {
-                    g1 = 1;
-                    repaint();
-                }
-                if (i >= 8 && i < 16) {
-                    y = 1;
-                    repaint();
-                }
-                if (i >= 1 && i < 8) {
-                    r = 1;
-                    repaint();
-                }
+            while (true) {
+                t.sleep(1000);
+                g1 = 1;
+                repaint();
+                
+                t.sleep(1000);
+                y = 1;
+                repaint();
+            
+                t.sleep(1000);
+                r = 1;
+                repaint();   
             }
-            if (i == 0) {
-                run();
-            }
-        } catch (Exception e) {
-        }
+         
+        } catch (Exception e) {}
     }
 
     public void paint(Graphics g) {
