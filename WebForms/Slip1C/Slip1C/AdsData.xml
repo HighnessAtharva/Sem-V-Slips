@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad>
+    <ImageUrl>~/Images/Google.png</ImageUrl>
+    <NavigateUrl>http://google.com</NavigateUrl>
+    <AlternateText>Please visit http://www.Google.com</AlternateText>
+    <Impressions>10</Impressions>
+  </Ad>
+  <Ad>
+    <ImageUrl>~/Images/Pragim.png</ImageUrl>
+    <NavigateUrl>http://pragimtech.com</NavigateUrl>
+    <AlternateText>Please visit http://www.pragimtech.com</AlternateText>
+    <Impressions>20</Impressions>
+  </Ad>
+  <Ad>
+    <ImageUrl>~/Images/Youtube.png</ImageUrl>
+    <NavigateUrl>http://Youtube.com</NavigateUrl>
+    <AlternateText>Please visit http://www.Youtube.com</AlternateText>
+    <Impressions>40</Impressions>
+  </Ad>
+</Advertisements>
