@@ -10,7 +10,7 @@ public class s18b {
         Statement stmt = conn.createStatement();
      ) {
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-            String query = "insert into students values(?,?,?)";
+            String query = "insert into students2 values(?,?,?)";
             PreparedStatement ps = conn.prepareStatement(query);
             System.out.println("Enter roll no : ");
             int id = Integer.parseInt(br.readLine());
@@ -27,7 +27,7 @@ public class s18b {
             else
                 System.out.println("Data not inserted");
             // display details
-            ResultSet rs = stmt.executeQuery("select * from students");
+            ResultSet rs = stmt.executeQuery("select * from students2");
             System.out.println("id\t" + "name\t" + "percentage");
             while (rs.next()) {
                 System.out.println("\n" + rs.getInt(1) + "\t" + rs.getString(2) + "\t" + rs.getInt(3));

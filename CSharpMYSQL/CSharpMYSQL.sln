@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32901.82
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S20C", "CSharpMYSQL\S20C.csproj", "{DDF11BFB-8905-43C8-807E-01CB307E1386}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DDF11BFB-8905-43C8-807E-01CB307E1386}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDF11BFB-8905-43C8-807E-01CB307E1386}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDF11BFB-8905-43C8-807E-01CB307E1386}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDF11BFB-8905-43C8-807E-01CB307E1386}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FAE77A2D-9366-4293-8BCB-F9D628680C8C}
+	EndGlobalSection
+EndGlobal
