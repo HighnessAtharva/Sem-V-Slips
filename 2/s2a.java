@@ -23,7 +23,7 @@ public class s2a {
     public static void main(String[] args) {
         Scanner sn = new Scanner(System.in);
         System.out.println("Enter a string");
-        String str1 = sn.next();
+        String str1 = sn.nextLine();
         sn.close();
         Vowels v = new Vowels(str1);
     }

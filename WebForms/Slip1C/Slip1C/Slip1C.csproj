@@ -72,6 +72,7 @@
     <Content Include="Slip15D.aspx" />
     <Content Include="Slip16D.aspx" />
     <Content Include="Slip17D.aspx" />
+    <Content Include="Slip18D.aspx" />
     <Content Include="Slip19D.aspx" />
     <Content Include="Slip1C.aspx" />
     <Content Include="Slip1C.html" />
@@ -118,6 +119,13 @@
     </Compile>
     <Compile Include="Slip17D.aspx.designer.cs">
       <DependentUpon>Slip17D.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Slip18D.aspx.cs">
+      <DependentUpon>Slip18D.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Slip18D.aspx.designer.cs">
+      <DependentUpon>Slip18D.aspx</DependentUpon>
     </Compile>
     <Compile Include="Slip19D.aspx.cs">
       <DependentUpon>Slip19D.aspx</DependentUpon>

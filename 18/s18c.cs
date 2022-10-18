@@ -3,20 +3,34 @@ using System;
    {  
      public static void Main(string[] args)  
       {  
-          Console.WriteLine("Enter something: ");
+        Console.WriteLine("Enter something");
+         string o = Console.ReadLine();
 
-          //take a value and output its data type
-            string input = Console.ReadLine();
-            Console.WriteLine("You entered: " + input);
-            try{
-                int val1 = int.Parse(input);
-                Console.WriteLine("You entered ");
-                Console.WriteLine( val1.GetType());
-            }catch(Exception e){
-                Console.WriteLine("You entered a string");
-            }
+string finalType = "Special Character";
+if (!string.IsNullOrEmpty(o)){
 
+  // Check integer before Decimal
+  int tryInt;
+  decimal tryDec;
+  if (Int32.TryParse(o, out tryInt)){
+    finalType = "Integer";
+  }
+  else if (Decimal.TryParse(o, out tryDec)){
+    finalType = "Decimal";
+  }    
+  else if(o.Length == 1){
+    finalType = "Char";
+  }
+  else if(o.Length > 1){
+    finalType = "String";
+  }
 
+}else{
+  finalType = "Empty";
+}
+
+Console.WriteLine(finalType);
+  Console.ReadLine();
 
 
      }  
