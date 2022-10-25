@@ -1,7 +1,7 @@
 <html>
 
 <body>
-    <%@ page import="java.sql.*;" %>
+    <%@ page import = "java.io.*,java.util.*,java.sql.*"%>
         <%! 
 static final String DB_URL = "jdbc:mysql://localhost/demo";
 static final String USER = "root";
@@ -15,7 +15,7 @@ int ano,bal;
       try(Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
          Statement stmt = conn.createStatement();
       ) {	
-            PreparedStatement s=cn.prepareStatement("insert into account values(?,?,?)");
+            PreparedStatement s=conn.prepareStatement("insert into account values(?,?,?)");
             s.setInt(1,ano);
             s.setString(2,type);
             s.setInt(3,bal);

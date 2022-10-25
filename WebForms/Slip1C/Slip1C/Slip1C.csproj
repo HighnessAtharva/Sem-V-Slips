@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="Slip13D.aspx" />
     <Content Include="Slip14D.aspx" />
     <Content Include="Slip15D.aspx" />
     <Content Include="Slip16D.aspx" />
@@ -92,6 +93,13 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Slip13D.aspx.cs">
+      <DependentUpon>Slip13D.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Slip13D.aspx.designer.cs">
+      <DependentUpon>Slip13D.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Slip14D.aspx.cs">
       <DependentUpon>Slip14D.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
