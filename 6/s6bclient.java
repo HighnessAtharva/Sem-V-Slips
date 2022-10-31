@@ -9,8 +9,7 @@ class s6bclient
         System.out.println("Client send request to server!");
         DataOutputStream dos=new DataOutputStream(s.getOutputStream());
         DataInputStream dis=new DataInputStream(s.getInputStream());
-        InputStreamReader ir=new InputStreamReader(System.in);
-        BufferedReader br=new BufferedReader(ir);
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
         while(true)
         {
             System.out.println("Client:");

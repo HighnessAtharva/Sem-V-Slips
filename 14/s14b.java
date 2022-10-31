@@ -9,9 +9,9 @@ public class s14b{
     Statement stmt = conn.createStatement();
  ) {
       
-      String insertEmp1 = "insert into employees values(23,'jay','trainee', 'A@gmail.com', 'dept1', 10000)";
-      String insertEmp2 = "insert into employees values(24,'jayes','trainee', 'B@gmail.com', 'dept1', 10000)";
-      String insertEmp3 = "insert into employees values(25,'shail','trainee', 'C@gmail.com', 'dept1', 10000)";
+      String insertEmp1 = "insert into employees values(33,'jay','trainee', 'A@gmail.com', 'dept1', 10000)";
+      String insertEmp2 = "insert into employees values(34,'jayes','trainee', 'B@gmail.com', 'dept1', 10000)";
+      String insertEmp3 = "insert into employees values(35,'shail','trainee', 'C@gmail.com', 'dept1', 10000)";
       conn.setAutoCommit(false);
       
       stmt.addBatch(insertEmp1);

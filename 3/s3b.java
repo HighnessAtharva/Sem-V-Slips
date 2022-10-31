@@ -7,6 +7,7 @@ public class s3b {
    static final String QUERY = "SELECT * FROM employees where department='Computer Science'";
 
    public static void main(String[] args) {
+      
       // Open a connection
       try(Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
          Statement stmt = conn.createStatement();

@@ -10,8 +10,7 @@ class s6bserver
         System.out.println("Server accpted request");
         DataOutputStream dos=new DataOutputStream(s.getOutputStream());
         DataInputStream dis=new DataInputStream(s.getInputStream());
-        InputStreamReader ir=new InputStreamReader(System.in);
-        BufferedReader br=new BufferedReader(ir);
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
         while(true)
         {
             System.out.println("Client:");
