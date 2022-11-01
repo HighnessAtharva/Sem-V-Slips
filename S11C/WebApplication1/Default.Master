@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication1.Site1" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.Master.cs" Inherits="WebApplication1.Site1" %>
 
 <!DOCTYPE html>
 
@@ -17,6 +17,7 @@
   <li><a href="News.aspx">News</a></li>
   <li><a href="Contact.aspx">Contact</a></li>
   <li><a href="About.aspx">About</a></li>
+    <li><a href="Your Account.aspx">Your Account</a></li>
 </ul>
 
     </nav>
