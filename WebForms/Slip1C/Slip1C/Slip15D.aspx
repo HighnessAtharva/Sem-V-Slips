@@ -9,8 +9,8 @@ If the input is correct display the message “valid user” otherwise “invali
     private void checkLogin(Object sender, EventArgs e)
     {
 
-        string myname = Request.Form["uname"];
-        string mypass = Request.Form["upass"];
+        string myname = Request["uname"];
+        string mypass = Request["upass"];
         if((myname=="admin") && (mypass == "abcd1234"))
         {
             result.InnerHtml = "Login Success";
