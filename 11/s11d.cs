@@ -1,30 +1,35 @@
-/* Write C# program to display the following data stored in the app.
-	Roll No          Student         Grade
-*/
-
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using MySql.Data.MySqlClient;
 
-namespace s11d
+namespace S11D
 {
-    public class Program
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
-           object[][] pupils = new object[][]{
-           new object[] {141,"Rakesh", 89},
-           new object[] {142,"Mukta", 90},
-           new object[] {143,"Jonathan", 88},
-           new object[] {144, "Sayali", 85},
-           new object[] {145, "Shyam", 77}
-        };
+            string constring = "SERVER=localhost;DATABASE=demo;UID=root;PASSWORD=''";
+            MySqlConnection conn = new MySqlConnection(constring);
+            conn.Open();
 
-            Console.WriteLine("PupilID\tName\tMarks");
-            foreach (object[] pupil in pupils)
+            string query = "select * from students2";
+            MySqlCommand cmd = new MySqlCommand(query, conn);
+            MySqlDataReader reader = cmd.ExecuteReader();
+
+            Console.WriteLine("Roll No \t Student \tGrade");
+            while (reader.Read())
             {
-                Console.WriteLine("{0}\t{1}\t{2}", pupil[0], pupil[1], pupil[2]);
+                //Using Console.Write to format it in single line instead of Console.WriteLine
+                Console.Write(reader["id"] + "\t\t");
+                Console.Write(reader["name"] + "\t\t");
+                Console.Write(reader["percentage"] + "\t\t");
+                Console.WriteLine();
             }
-
-
+            
+            Console.ReadLine();
         }
     }
 }
