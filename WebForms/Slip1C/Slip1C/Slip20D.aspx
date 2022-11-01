@@ -1,17 +1,5 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Slip2C.aspx.cs" Inherits="Slip1C.Slip2C" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Slip20D.aspx.cs" Inherits="Slip1C.Slip20D" %>
 
-<script runat="server">
-    private void printTable(Object sender, EventArgs e)
-    {
-        int number = int.Parse(n1.Value);
-        result.InnerHtml = "<br><b>Table for " + number +": </b><br>    ";
-        for (int i = 1; i < 10; i++)
-        {
-            result.InnerHtml += number + "x" + i + " = " + number * i +"<br>";
-        }
-       
-    }
-</script>
 
 <!DOCTYPE html>
 
@@ -24,7 +12,7 @@
         <div>
             <input type="number" id="n1" runat="server" placeholder="Multiplication table" />
             <br/>
-            <input type="submit" runat="server" id="btn1" onserverclick="printTable" />
+            <input type="submit" runat="server" id="btn1" onserverclick="PrintTable" />
             <br/>
         </div>
     </form>

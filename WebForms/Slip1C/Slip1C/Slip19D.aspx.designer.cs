@@ -7,70 +7,74 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+namespace Slip1C
+{
 
 
-public partial class  {
+    public partial class Slip19D
+    {
 
-    /// <summary>
-    /// form1 control.
-    /// </summary>
-    /// <remarks>
-    /// Auto-generated field.
-    /// To modify move field declaration from designer file to code-behind file.
-    /// </remarks>
-protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        /// <summary>
+        /// form1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
-/// <summary>
-/// myname control.
-/// </summary>
-/// <remarks>
-/// Auto-generated field.
-/// To modify move field declaration from designer file to code-behind file.
-/// </remarks>
-protected global::System.Web.UI.WebControls.TextBox myname;
+        /// <summary>
+        /// myname control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox myname;
 
-/// <summary>
-/// myage control.
-/// </summary>
-/// <remarks>
-/// Auto-generated field.
-/// To modify move field declaration from designer file to code-behind file.
-/// </remarks>
-protected global::System.Web.UI.WebControls.TextBox myage;
+        /// <summary>
+        /// myage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox myage;
 
-/// <summary>
-/// RadioButton1 control.
-/// </summary>
-/// <remarks>
-/// Auto-generated field.
-/// To modify move field declaration from designer file to code-behind file.
-/// </remarks>
-protected global::System.Web.UI.WebControls.RadioButton RadioButton1;
+        /// <summary>
+        /// RadioButton1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton RadioButton1;
 
-/// <summary>
-/// RadioButton2 control.
-/// </summary>
-/// <remarks>
-/// Auto-generated field.
-/// To modify move field declaration from designer file to code-behind file.
-/// </remarks>
-protected global::System.Web.UI.WebControls.RadioButton RadioButton2;
+        /// <summary>
+        /// RadioButton2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton RadioButton2;
 
-/// <summary>
-/// Button1 control.
-/// </summary>
-/// <remarks>
-/// Auto-generated field.
-/// To modify move field declaration from designer file to code-behind file.
-/// </remarks>
-protected global::System.Web.UI.WebControls.Button Button1;
+        /// <summary>
+        /// Button1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1;
 
-/// <summary>
-/// message control.
-/// </summary>
-/// <remarks>
-/// Auto-generated field.
-/// To modify move field declaration from designer file to code-behind file.
-/// </remarks>
-protected global::System.Web.UI.WebControls.Label message;
+        /// <summary>
+        /// message control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label message;
+    }
 }

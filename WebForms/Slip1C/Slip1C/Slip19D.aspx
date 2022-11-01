@@ -1,28 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Slip19D.aspx.cs"   %>  
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Slip19D.aspx.cs" Inherits="Slip1C.Slip19D"%>  
 <!DOCTYPE html>  
 
-<script runat="server">
-    protected void Button1_Click(object sender, EventArgs e)
-    {
-
-        string gender;
-
-        message.Text = "";
-        if (RadioButton1.Checked)
-        {
-            gender = "boi";
-             message.Text = "I am <b>" + Request["myname"] + "</b>, my age is <b>" +Request["myage"] + "</b> and I am a <b>" + gender +"</b>";
-        }
-        if (RadioButton2.Checked)
-        {
-            gender = "gurl";
-            message.Text = "I am <b>" + Request["myname"] + "</b>, my age is <b>" +Request["myage"] + "</b> and I am a <b>" + gender+"</b>";
-        }
-
-        //message.Text = "I am " + Request["myname"] + ", my age is: " +Request["myage"] + "and I am a " + gender;
-
-    }
-    </script>
 
 <html xmlns="http://www.w3.org/1999/xhtml">  
 <head runat="server">  
