@@ -4,7 +4,6 @@
 
 using System;
 
-
 class Box
 {
     private int length;   // Length of a box
@@ -31,12 +30,12 @@ class Box
     }
 
 
-    public static Box operator *(Box b, Box c)
+    public static Box operator -(Box b, Box c)
     {
         Box box = new Box();
-        box.length = b.length * c.length;
-        box.breadth = b.breadth * c.breadth;
-        box.height = b.height * c.height;
+        box.length = b.length - c.length;
+        box.breadth = b.breadth - c.breadth;
+        box.height = b.height - c.height;
         return box;
     }
 
@@ -69,7 +68,7 @@ class OverloadTest
         Console.WriteLine("Volume of Box2 : {0}", volume);
 
 
-        Box3 = Box1 * Box2;
+        Box3 = Box1 - Box2;
 
         // volume of box 3
         volume = Box3.getVolume();

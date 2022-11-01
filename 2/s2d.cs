@@ -1,3 +1,5 @@
+//Write a C# program to accept n names of cities from the user and display them in descending order.
+
 using System;
 using System.Linq;
 

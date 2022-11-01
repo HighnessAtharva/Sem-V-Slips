@@ -1,3 +1,5 @@
+/* Write a JDBC application using swing for the following: */
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;

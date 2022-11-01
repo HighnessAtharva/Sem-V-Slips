@@ -1,3 +1,5 @@
+/*Write a java program using multithreading to execute the threads sequentially.
+(Use Synchronized Method)	*/
 
 class PrintDemo {
     public void printCount() {
@@ -9,18 +11,18 @@ class PrintDemo {
         } catch (Exception e) {
             System.out.println("Thread interrupted.");
         }
-    }}
-    
-class ThreadDemo extends Thread{
+    }
+}
+
+class ThreadDemo extends Thread {
 
     private Thread t;
     private String threadName;
     PrintDemo PD;
 
-    ThreadDemo( String name, PrintDemo pd)
-    {
-    threadName = name;
-    PD = pd;
+    ThreadDemo(String name, PrintDemo pd) {
+        threadName = name;
+        PD = pd;
     }
 
     public void run() {

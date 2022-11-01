@@ -1,3 +1,6 @@
+/*Write a java program to create a student table with field’s rno, name and per. 
+Insert values in the table. Display all the details of the student on screen. (Use PreparedStatement Interface)  */
+
 import java.sql.*;
 import java.io.*;
 
@@ -5,10 +8,10 @@ public class s18b {
     static final String DB_URL = "jdbc:mysql://localhost/demo";
     static final String USER = "root";
     static final String PASS = "";
+
     public static void main(String args[]) {
-        try(Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
-        Statement stmt = conn.createStatement();
-     ) {
+        try (Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
+                Statement stmt = conn.createStatement();) {
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             String query = "insert into students2 values(?,?,?)";
             PreparedStatement ps = conn.prepareStatement(query);

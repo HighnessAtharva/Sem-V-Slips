@@ -1,3 +1,5 @@
+/* Write a JSP script to check whether given mail ID is valid or not. (Mail ID should contain one @ symbol).*/
+
 <html>
 
 <body>

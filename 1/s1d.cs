@@ -1,4 +1,5 @@
-// Define a class Student with attributes roll no and name. Define default and parameterized constructor. Keep the count of Objects created. Create objects using parameterized constructor and Display the object count after each object is created. 
+// Define a class Student with attributes roll no and name. Define default and parameterized constructor. 
+// Keep the count of Objects created. Create objects using parameterized constructor and Display the object count after each object is created. 
 
 using System;
 
@@ -14,6 +15,8 @@ class Student
         //defualt values if none are provided
         this.rollNumber = 0;
         this.name = "STUDENT";
+        count += 1;
+        Console.WriteLine("Objects created till now are " + count);
     }
 
     public Student(int rollNumber, string name)
@@ -23,7 +26,6 @@ class Student
         count += 1;
         Console.WriteLine("Objects created till now are " + count);
     }
-
 }
 
 class Test
@@ -42,9 +44,6 @@ class Test
             Console.WriteLine("Enter more info or N to exit");
             checker = Console.ReadLine();
         }
-
-
-
 
     }
 }

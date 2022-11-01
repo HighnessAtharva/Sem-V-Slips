@@ -1,3 +1,5 @@
+/*Write a Multithreading program in java for bouncing ball. For each bounce change the color of ball randomly.  */
+
 import java.awt.*;
 
 /*<applet code="BounsingBall.class" height=400 width=350></applet>*/

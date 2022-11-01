@@ -1,3 +1,9 @@
+/*Write a java program for implementation scrollable ResultSet. Consider Emp table (eno ename, sal)
+-	moveFirst
+-	moveNext
+-	movePrevious
+-	moveLast   	*/
+
 import java.sql.*;
 import java.util.*;
 

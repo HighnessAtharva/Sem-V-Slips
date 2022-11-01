@@ -1,3 +1,5 @@
+/*Write a java program to simulate traffic signal using multithreading. */
+
 /*<applet code= "s17b.class" height="600" width="600"></applet>*/
 
 import java.awt.*;
@@ -21,17 +23,18 @@ public class s17b extends Applet implements Runnable {
                 t.sleep(1000);
                 g1 = 1;
                 repaint();
-                
+
                 t.sleep(1000);
                 y = 1;
                 repaint();
-            
+
                 t.sleep(1000);
                 r = 1;
-                repaint();   
+                repaint();
             }
-         
-        } catch (Exception e) {}
+
+        } catch (Exception e) {
+        }
     }
 
     public void paint(Graphics g) {

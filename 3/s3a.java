@@ -1,3 +1,5 @@
+/*Write a java program to display “Hello Java” message n times on the screen. (Use Runnable Interface). */
+
 import java.util.Scanner;
 
 class JavaThread implements Runnable {
