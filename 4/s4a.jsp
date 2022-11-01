@@ -2,8 +2,12 @@
 
 <%@ page contentType="text/html" pageEncoding="UTF-8"%>
 
-<!DOCTYPE html>
-<%
+    <!DOCTYPE html>
+
+    <%@ include file="header.html" %>
+
+
+    <%
     int num = Integer.parseInt(request.getParameter("num"));
     int n = num;
     int rem, no = 0;

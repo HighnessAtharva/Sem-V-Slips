@@ -30,12 +30,12 @@ class Box
     }
 
 
-    public static Box operator -(Box b, Box c)
+    public static Box operator *(Box b, Box c)
     {
         Box box = new Box();
-        box.length = b.length - c.length;
-        box.breadth = b.breadth - c.breadth;
-        box.height = b.height - c.height;
+        box.length = b.length * c.length;
+        box.breadth = b.breadth * c.breadth;
+        box.height = b.height * c.height;
         return box;
     }
 
@@ -56,6 +56,7 @@ class OverloadTest
         Box Box1 = new Box(2, 3, 3);    // Declare Box1 of type Box
         Box Box2 = new Box(6, 7, 5);   // Declare Box2 of type Box
         Box Box3 = new Box();   // Declare Box3 of type Box
+        Box Box4 = new Box();
         int volume = 0;    // Store the volume of a box here
 
 
@@ -68,15 +69,15 @@ class OverloadTest
         Console.WriteLine("Volume of Box2 : {0}", volume);
 
 
-        Box3 = Box1 - Box2;
+        Box3 = Box1 * Box2;
 
         // volume of box 3
         volume = Box3.getVolume();
         Console.WriteLine("Volume of Box3 (Product of 2 boxes): {0}", volume);
 
 
-        Box3 = ++Box3;
-        volume = Box3.getVolume();
-        Console.WriteLine("Volume of Box3 after Increment (+ Overload): {0}", volume);
+        Box4 = ++Box1;
+        volume = Box4.getVolume();
+        Console.WriteLine("Volume of Box4 after Increment (+ Overload): {0}", volume);
     }
 }

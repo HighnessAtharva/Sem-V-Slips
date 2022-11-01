@@ -33,13 +33,30 @@
     {
         string message = "";
         int N = 0;
+        List<int> sum = new List<int>();
         foreach (TextBox textBox in pnlTextBoxes.Controls.OfType<TextBox>())
         {
+            
+            sum.Add(Int32.Parse(textBox.Text));
             N++;
-            message += Int32.Parse(textBox.Text);
         }
-        printHere.Text = counter.ToString();
 
+        printHere.Text = message;
+        printHere.Text += "Total Values given: " + N.ToString() + "<br>";
+        
+
+        //calculating average
+        double average = sum.Average();
+        printHere.Text+="Average: " + average + "<br>";
+
+        //calculating min
+        double min = sum.Min();
+        printHere.Text += "Min Val: " + min + "<br>";
+
+
+        //calculating max
+        double max = sum.Max();
+        printHere.Text += "Max Val: " + max + "<br>";
 
     }
 
