@@ -3,7 +3,6 @@
 import java.awt.*;
 import java.awt.event.*;
 
-
 class s11a extends Frame implements Runnable {
     Thread t;
     Label l1;
@@ -20,17 +19,16 @@ class s11a extends Frame implements Runnable {
         setVisible(true);
         f = 0;
 
-        addWindowListener(new WindowAdapter(){
-            public void windowClosing(WindowEvent e){
-                 dispose();
+        addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e) {
+                dispose();
             }
-       });
+        });
     }
-    
 
     public void run() {
         try {
-            
+
             if (f == 0) {
                 Thread.sleep(200);
                 l1.setText("");
@@ -49,6 +47,6 @@ class s11a extends Frame implements Runnable {
 
     public static void main(String a[]) {
         new s11a();
-        
+
     }
 }

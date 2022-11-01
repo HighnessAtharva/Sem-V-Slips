@@ -23,7 +23,6 @@ namespace CSharpMYSQL
             MySqlCommand cmd = new MySqlCommand(query, conn);
             MySqlDataReader reader = cmd.ExecuteReader();
 
-
             Console.WriteLine("Items are as follows");
             while (reader.Read())
             {

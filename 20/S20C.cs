@@ -1,4 +1,7 @@
-﻿using MySql.Data.MySqlClient;
+﻿// Write C# program to connect with MySQL database booksdb from WAMP server and search for a book titled ‘ASP dot NET’ 
+// from the table books that has bookname as the field to compare the book name to. 
+
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Linq;

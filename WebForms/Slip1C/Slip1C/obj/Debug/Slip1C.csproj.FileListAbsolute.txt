@@ -175,3 +175,7 @@ C:\xampp\tomcat\webapps\ROOT\Sem5Slips\WebForms\Slip1C\Slip1C\obj\Debug\Slip1C.c
 C:\xampp\tomcat\webapps\ROOT\Sem5Slips\WebForms\Slip1C\Slip1C\obj\Debug\Slip1C.csproj.CopyComplete
 C:\xampp\tomcat\webapps\ROOT\Sem5Slips\WebForms\Slip1C\Slip1C\obj\Debug\Slip1C.dll
 C:\xampp\tomcat\webapps\ROOT\Sem5Slips\WebForms\Slip1C\Slip1C\obj\Debug\Slip1C.pdb
+C:\xampp\htdocs\Sem-V-Slips\WebForms\Slip1C\Slip1C\obj\Debug\Slip1C.csproj.AssemblyReference.cache
+C:\xampp\htdocs\Sem-V-Slips\WebForms\Slip1C\Slip1C\obj\Debug\Slip1C.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\Sem-V-Slips\WebForms\Slip1C\Slip1C\obj\Debug\Slip1C.dll
+C:\xampp\htdocs\Sem-V-Slips\WebForms\Slip1C\Slip1C\obj\Debug\Slip1C.pdb

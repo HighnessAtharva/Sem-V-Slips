@@ -16,7 +16,8 @@ class Box
         return length * breadth * height;
     }
 
-    public Box(){
+    public Box()
+    {
         length = 0;
         breadth = 0;
         height = 0;
@@ -40,7 +41,8 @@ class Box
         return box;
     }
 
-    public static Box operator  --(Box c){
+    public static Box operator --(Box c)
+    {
         Box box = new Box();
         box.length = c.length - 1;
         box.breadth = c.breadth - 1;

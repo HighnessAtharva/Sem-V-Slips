@@ -4,7 +4,6 @@
 
 using System;
 
-
 class Box
 {
     private int length;   // Length of a box

@@ -21,17 +21,18 @@ public class s17b extends Applet implements Runnable {
                 t.sleep(1000);
                 g1 = 1;
                 repaint();
-                
+
                 t.sleep(1000);
                 y = 1;
                 repaint();
-            
+
                 t.sleep(1000);
                 r = 1;
-                repaint();   
+                repaint();
             }
-         
-        } catch (Exception e) {}
+
+        } catch (Exception e) {
+        }
     }
 
     public void paint(Graphics g) {

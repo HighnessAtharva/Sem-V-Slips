@@ -6,7 +6,6 @@ class s16b {
     static final String USER = "root";
     static final String PASS = "";
 
-
     public static void main(String a[]) {
         try (Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
                 Statement stmt = conn.createStatement();) {

@@ -14,6 +14,8 @@ class Student
         //defualt values if none are provided
         this.rollNumber = 0;
         this.name = "STUDENT";
+        count += 1;
+        Console.WriteLine("Objects created till now are " + count);
     }
 
     public Student(int rollNumber, string name)
@@ -42,9 +44,5 @@ class Test
             Console.WriteLine("Enter more info or N to exit");
             checker = Console.ReadLine();
         }
-
-
-
-
     }
 }

@@ -1,0 +1,1 @@
+C:\xampp\htdocs\Sem-V-Slips\WebForms\Slip1C\Slip1C\obj\Release\Slip1C.csproj.CoreCompileInputs.cache

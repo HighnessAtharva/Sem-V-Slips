@@ -64,21 +64,20 @@ class s8b extends JFrame implements ActionListener {
             try {
                 try (Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
 
-                Statement st = conn.createStatement();) {
-                // String str1 = t1.getText();
-                st.executeUpdate("drop table doctor1");
-                JOptionPane.showMessageDialog(null, "Table dropped");
-                conn.close();
+                        Statement st = conn.createStatement();) {
+                    // String str1 = t1.getText();
+                    st.executeUpdate("drop table doctor1");
+                    JOptionPane.showMessageDialog(null, "Table dropped");
+                    conn.close();
+                } catch (Exception e) {
+                    System.out.println(e);
+                }
             } catch (Exception e) {
                 System.out.println(e);
+            } finally {
+                System.out.println("Finally Block");
             }
-        } catch (Exception e) {
-            System.out.println(e);
         }
-        finally {
-            System.out.println("Finally Block");
-        }
-    }
     }
 
     public static void main(String args[]) {

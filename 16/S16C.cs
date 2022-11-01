@@ -1,4 +1,7 @@
-﻿using MySql.Data.MySqlClient;
+﻿// Write C# program to connect with MySQL database called sampledb in WAMP server. 
+// Display the data from the table itemlist that has itemid, itemname and itemprice as its fields.                         
+
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,7 +25,6 @@ namespace CSharpMYSQL
             string query = "select * from itemlist";
             MySqlCommand cmd = new MySqlCommand(query, conn);
             MySqlDataReader reader = cmd.ExecuteReader();
-
 
             Console.WriteLine("Items are as follows");
             while (reader.Read())
