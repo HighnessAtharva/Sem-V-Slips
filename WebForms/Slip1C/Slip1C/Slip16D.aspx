@@ -48,10 +48,15 @@
             OnClick="btnBookName_Click"
             runat="server" />
         
+         <p>Browse to Upload File</p>  
+            <asp:FileUpload ID="FileUpload1" runat="server" />  
+
+
         <br /><br />
             <asp:Label ID="lblBookName" Text="" runat="server" /><br />
             <asp:Label ID="lblBookComment" Text="" runat="server" />
 
+     
 
     </form>
 </body>
