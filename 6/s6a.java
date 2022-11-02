@@ -19,6 +19,5 @@ class s6a {
         t.setPriority(2);
         p = t.getPriority();
         System.out.println("Changed Priority : " + p);
-
     }
 }
