@@ -17,13 +17,11 @@ public class s9b extends java.applet.Applet implements Runnable {
    public void run() {
       try {
          if (f == 0) {
-            t.sleep(1000);
-            f = 1;
             repaint();
+            t.sleep(5000);
          } else {
-            t.sleep(1000);
+            t.sleep(5000);
             repaint();
-            f = 0;
          }
       } catch (Exception e) {
       }
