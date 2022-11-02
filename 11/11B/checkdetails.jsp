@@ -13,7 +13,8 @@
         {
         response.sendRedirect("success.jsp");
         }
-        else        {
+        else        
+        {
                response.sendRedirect("failed.jsp");
         }
         %>

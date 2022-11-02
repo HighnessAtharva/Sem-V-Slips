@@ -7,8 +7,8 @@
 <body>
     <%
         String data=(String)session.getAttribute("session-uid");
-        out.println(" Login Successfully...!!!");
-        %>
+        out.println(" Login Successful...!!!");
+    %>
 </body>
 
 </html>

@@ -43,7 +43,7 @@
 
                 <% 
 Class.forName("sun.jdbc.odbc.JdbcOdbcDriver"); 
-con=DriverManager.getConnection("jdbc:odbc:mydsn); 
+con=DriverManager.getConnection("jdbc:odbc:mydsn"); 
 st= con.createStatement(); 
 rs=st.executeQuery("select * from hospital"); 
 %>
