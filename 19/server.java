@@ -7,17 +7,12 @@ import java.util.*;
 public class server {
     public static void main(String args[]) {
         try {
-            ServerSocket ss = new ServerSocket(5252);
+            ServerSocket ss = new ServerSocket(500);
             System.out.println("Server waiting for client");
             Socket client = ss.accept();
             System.out.println("Client Connected");
-            BufferedReader br = new BufferedReader(new InputStreamReader(client.getInputStream()));
-            PrintStream ps = new PrintStream(client.getOutputStream());
-            Date d = new Date();
-            System.out.println(br.readLine());
-            ps.println("Message sent from Server: Current Time on Server's machine: " + d.toString());// write client
-            br.close();
-            ps.close();
+            DataOutputStream dos = new DataOutputStream(client.getOutputStream());
+            dos.writeUTF("Message recieved from Server: Current Time on Server's machine: " + new Date().toString());// write client
             client.close();
             ss.close();
         } catch (IOException ie) {

@@ -16,7 +16,7 @@ namespace Slip1C
 
         protected void PrintTable(Object sender, EventArgs e)
         {
-            int number = int.Parse(n1.Value);
+            int number = Convert.ToInt32(n1.Value);
             result.InnerHtml = "<br><b>Table for " + number + ": </b><br>    ";
             for (int i = 1; i < 10; i++)
             {
