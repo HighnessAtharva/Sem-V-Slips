@@ -6,13 +6,13 @@ import java.awt.*;
 import java.applet.*;
 
 public class s17b extends Applet implements Runnable {
-    int r, g1, y, i;
+    int red, green, yellow, i;
     Thread t;
 
     public void init() {
-        r = 0;
-        g1 = 0;
-        y = 0;
+        red = 0;
+        green = 0;
+        yellow = 0;
         t = new Thread(this);
         t.start();
     }
@@ -21,15 +21,15 @@ public class s17b extends Applet implements Runnable {
         try {
             while (true) {
                 t.sleep(1000);
-                g1 = 1;
+                green = 1;
                 repaint();
 
                 t.sleep(1000);
-                y = 1;
+                yellow = 1;
                 repaint();
 
                 t.sleep(1000);
-                r = 1;
+                red = 1;
                 repaint();
             }
 
@@ -42,24 +42,24 @@ public class s17b extends Applet implements Runnable {
         g.drawOval(100, 225, 100, 100);
         g.drawOval(100, 350, 100, 100);
         g.drawString("start", 200, 200);
-        if (r == 1) {
+        if (red == 1) {
             g.setColor(Color.red);
             g.fillOval(100, 100, 100, 100);
             g.drawOval(100, 100, 100, 100);
             g.drawString("stop", 200, 200);
-            r = 0;
+            red = 0;
         }
-        if (g1 == 1) {
+        if (green == 1) {
             g.setColor(Color.green);
             g.fillOval(100, 225, 100, 100);
-            g1 = 0;
+            green = 0;
             g.drawOval(100, 225, 100, 100);
             g.drawString("go", 200, 200);
         }
-        if (y == 1) {
+        if (yellow == 1) {
             g.setColor(Color.yellow);
             g.fillOval(100, 350, 100, 100);
-            y = 0;
+            yellow = 0;
             g.drawOval(100, 350, 100, 100);
             g.drawString("slow", 200, 200);
         }
