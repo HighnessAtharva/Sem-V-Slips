@@ -7,17 +7,17 @@
     <%@ include file="header.html" %>
 
 
-    <%
+        <%
     int num = Integer.parseInt(request.getParameter("num"));
     int n = num;
-    int rem, no = 0;
+    int rem, sum = 0;
     while(n!=0)
     {
         rem = n%10;
-        no = no+rem*rem*rem;
+        sum = sum+rem*rem*rem;
         n = n/10;
     }
-    if(no == num)
+    if(sum == num)
     {
         out.println("\nArmstrong Number");
     }

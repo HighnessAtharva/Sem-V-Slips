@@ -37,12 +37,12 @@ class s1b extends Frame implements ActionListener, Runnable {
      }
 
      public void actionPerformed(ActionEvent ae) {
-          String str;
-          str = ae.getActionCommand();
-          if (str.equals("Start")) {
+
+          // str = ae.getActionCommand();
+          if (ae.getSource()==b1) {
                t1.start();
 
-          } else if (str.equals("Stop")) {
+          } else if (ae.getSource()==b2) {
                t1.stop();
 
           }
