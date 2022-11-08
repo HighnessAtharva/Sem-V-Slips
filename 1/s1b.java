@@ -61,6 +61,6 @@ class s1b extends Frame implements ActionListener, Runnable {
      }
 
      public static void main(String[] args) {
-          new s1b().show();
+          new s1b();
      }
 }

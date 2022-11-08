@@ -16,6 +16,8 @@ class s8b extends JFrame implements ActionListener {
 
     s8b() {
         setLayout(null);
+        setSize(440, 350);
+
         l1 = new JLabel("Type DDL Query");
         b1 = new JButton("Create Table");
         b2 = new JButton("Alter Table");
@@ -34,55 +36,40 @@ class s8b extends JFrame implements ActionListener {
         b1.addActionListener(this);
         b2.addActionListener(this);
         b3.addActionListener(this);
-        setSize(440, 350);
+        setVisible(true); // add this command after all the components are added otherwise they won't show up.
     }
 
     public void actionPerformed(ActionEvent ae) {
+        try (Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
+            Statement st = conn.createStatement();) {
         if (ae.getSource() == b1) {
-            try (Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
-
-                    Statement st = conn.createStatement();) {
-                // String str = t1.getText();
-                st.executeUpdate("create table doctor1(Doctorid int,dname varchar(10),addr varchar(10))");
-                JOptionPane.showMessageDialog(null, "Table created");
-                conn.close();
-            } catch (Exception e) {
-                System.out.println(e);
-            }
+            // String str = t1.getText();
+            st.executeUpdate("create table doctor1(Doctorid int,dname varchar(10),addr varchar(10))");
+            JOptionPane.showMessageDialog(null, "Table created");
+            conn.close();
         }
         if (ae.getSource() == b2) {
-            try (Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
-
-                    Statement st = conn.createStatement();) {
-                // String str1 = t1.getText();
-                st.executeUpdate("alter table doctor1 add ph_no int");
-                JOptionPane.showMessageDialog(null, "Table altered");
-                conn.close();
-            } catch (Exception e) {
-                System.out.println(e);
+            // String str1 = t1.getText();
+            st.executeUpdate("alter table doctor1 add ph_no int");
+            JOptionPane.showMessageDialog(null, "Table altered");
+            conn.close();
             }
-        }
+        
         if (ae.getSource() == b3) {
-            try {
-                try (Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
-
-                        Statement st = conn.createStatement();) {
-                    // String str1 = t1.getText();
-                    st.executeUpdate("drop table doctor1");
-                    JOptionPane.showMessageDialog(null, "Table dropped");
-                    conn.close();
-                } catch (Exception e) {
-                    System.out.println(e);
-                }
-            } catch (Exception e) {
+                // String str1 = t1.getText();
+                st.executeUpdate("drop table doctor1");
+                JOptionPane.showMessageDialog(null, "Table dropped");
+                conn.close();
+                } 
+            }catch(Exception e)
+            {
                 System.out.println(e);
-            } finally {
-                System.out.println("Finally Block");
             }
         }
-    }
+    
+    
 
     public static void main(String args[]) {
-        new s8b().show();
+        new s8b();
     }
 }

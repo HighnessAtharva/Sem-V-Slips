@@ -12,15 +12,20 @@ public class s18b {
     public static void main(String args[]) {
         try (Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
                 Statement stmt = conn.createStatement();) {
+            
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-            String query = "insert into students2 values(?,?,?)";
-            PreparedStatement ps = conn.prepareStatement(query);
+            
+            
             System.out.println("Enter roll no : ");
             int id = Integer.parseInt(br.readLine());
             System.out.println("Enter name : ");
             String name = br.readLine();
             System.out.println("Enter per : ");
             int percentage = Integer.parseInt(br.readLine());
+
+            
+            String query = "insert into students2 values(?,?,?)";
+            PreparedStatement ps = conn.prepareStatement(query);
             ps.setInt(1, id);
             ps.setString(2, name);
             ps.setInt(3, percentage);

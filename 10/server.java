@@ -14,7 +14,6 @@ class server
         Socket s = ss.accept();
         DataInputStream din = new DataInputStream(s.getInputStream());
         DataOutputStream dout = new DataOutputStream(s.getOutputStream());
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("server here..");
         String str = "", str2 = "";
         str = din.readUTF();

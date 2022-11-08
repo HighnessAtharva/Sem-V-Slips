@@ -16,7 +16,7 @@ class s5a {
         // important to use the TPYE_SCROLL_INSENSITIVE and CONCUR_UPDATEABLE
         try (Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
 
-                Statement stmt = conn.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);) {
+            Statement stmt = conn.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);) {
             ResultSet rs = null;
             int ch;
             Scanner s = new Scanner(System.in);

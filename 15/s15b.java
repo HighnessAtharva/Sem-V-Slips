@@ -47,7 +47,7 @@ class s15b extends Frame implements Runnable {
                 t.sleep(50);
                 l1.setBounds(x -= 5, y += 5, 70, 15);
                 add(l1);
-                if (y == 390)
+                if (y == 400)
                     side = 4;
             }
             if (side == 4) {
