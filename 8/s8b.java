@@ -6,7 +6,7 @@ import java.awt.event.*;
 import javax.swing.*;
 import java.sql.*;
 
-class s8b extends JFrame implements ActionListener {
+class s8b extends Frame implements ActionListener {
     JLabel l1;
     JButton b1, b2, b3;
     JTextArea t1;
@@ -37,7 +37,18 @@ class s8b extends JFrame implements ActionListener {
         b2.addActionListener(this);
         b3.addActionListener(this);
         setVisible(true); // add this command after all the components are added otherwise they won't show up.
+
+        addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e){
+                System.exit(0);
+            }
+        });
+        
+        
     }
+
+    
+  
 
     public void actionPerformed(ActionEvent ae) {
         try (Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);

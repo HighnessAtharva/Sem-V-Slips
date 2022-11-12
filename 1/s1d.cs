@@ -32,18 +32,23 @@ class Test
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Enter Student name and roll number. Enter N to exit.");
-
-        string checker = "";
-        while (checker != "N" || checker != "n")
+        Console.WriteLine("Enter Student name and roll number. Enter -1 to exit.");
+        while(true)
         {
-            Console.WriteLine("Enter name and roll number one by one");
+            Console.WriteLine("Enter name");
             string userName = Console.ReadLine();
-            string userRollNumber = Console.ReadLine();
-            Student s = new Student(Convert.ToInt32(userRollNumber), userName);
-            Console.WriteLine("Enter more info or N to exit");
-            checker = Console.ReadLine();
+            
+            Console.WriteLine("Enter roll number");
+            int userRollNumber = Convert.ToInt32(Console.ReadLine());
+           
+            Student s = new Student(userRollNumber, userName);
+           
+            Console.WriteLine("Want to add more? -1 to cancel, any other key to continue");
+            string userChoice = Console.ReadLine();
+            if (userChoice == "-1")
+            {
+                break; 
+            }
         }
-
     }
 }

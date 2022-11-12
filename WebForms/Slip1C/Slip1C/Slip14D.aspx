@@ -48,7 +48,7 @@
     
    <form runat="server">
   
-       <asp:TextBox ID="TextBox1" runat="server" Width="115px"></asp:TextBox>
+       <asp:TextBox ID="TextBox1" runat="server" Width="115px" ></asp:TextBox>
 <asp:ImageButton ID="ImageButton1" runat="server" 
     ImageUrl="~/Images/Calendar.png" onclick="ImageButton1_Click" />
 <asp:Calendar ID="Calendar1" runat="server" ondayrender="Calendar1_DayRender" 

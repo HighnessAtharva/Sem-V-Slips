@@ -2,19 +2,10 @@
 
 import java.util.Scanner;
 
-class JavaThread implements Runnable {
-    Thread t1;
-
-    JavaThread(String s) {
-        t1 = new Thread(this, s);
-        System.out.println("Name of the Thread=" + t1.getName());
-
-        t1.start();
-    }
-
+class JavaThread extends Thread {
     public void run() {
         try {
-            System.out.println("Enter N");
+            System.out.println("Enter No of times to print Hello Java");
             Scanner sc = new Scanner(System.in);
             int n = sc.nextInt();
             sc.close();
@@ -28,11 +19,11 @@ class JavaThread implements Runnable {
             System.out.println("Exception");
         }
     }
-
 }
 
 public class s3a {
     public static void main(String[] args) {
-        JavaThread jt = new JavaThread("Java Thread");
+        JavaThread jt = new JavaThread();
+        jt.start();
     }
 }

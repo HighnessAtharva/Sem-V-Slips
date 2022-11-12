@@ -14,8 +14,7 @@ class Vowels extends Thread {
         System.out.println("Vowels are  ");
         for (int i = 0; i < s1.length(); i++) {
             char ch = s1.charAt(i);
-            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' || ch == 'E' || ch == 'I'
-                    || ch == 'O' || ch == 'U')
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
                 System.out.print(" " + ch);
         }
     }
@@ -26,7 +25,7 @@ public class s2a {
         Scanner sn = new Scanner(System.in);
         System.out.println("Enter a string");
         String str1 = sn.nextLine();
-        sn.close();
-        Vowels v = new Vowels(str1);
+        sn.close();  
+        new Vowels(str1);
     }
 }

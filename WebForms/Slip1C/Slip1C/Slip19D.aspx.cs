@@ -16,6 +16,7 @@ namespace Slip1C
             string gender;
 
             message.Text = "";
+           
             if (RadioButton1.Checked)
             {
                 gender = "boi";
