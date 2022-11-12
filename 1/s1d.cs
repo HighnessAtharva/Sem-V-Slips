@@ -32,7 +32,7 @@ class Test
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Enter Student name and roll number. Enter -1 to exit.");
+        Console.WriteLine("Enter Student name and roll number.");
         while(true)
         {
             Console.WriteLine("Enter name");

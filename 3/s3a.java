@@ -9,11 +9,10 @@ class JavaThread extends Thread {
             Scanner sc = new Scanner(System.in);
             int n = sc.nextInt();
             sc.close();
-            int counter = 1;
-            for (int i = 0; i < n; i++) {
-                System.out.println("Hello Java | Count: " + counter);
+            
+            for (int i = 1; i <= n; i++) {
+                System.out.println("Hello Java | Count: " + i);
                 Thread.sleep(100);
-                counter = counter + 1;
             }
         } catch (InterruptedException e) {
             System.out.println("Exception");

@@ -4,28 +4,19 @@
     private void checkforprime(Object sender,EventArgs e)
     {
         int n = int.Parse(n1.Value);
-        Boolean a=false;
+        Boolean a=true;
         for(int i=2;i<n;i++)
         {
-
             if(n % i == 0)
             {
-                a = true;
+                result.InnerHtml = "not a prime";
+                a = false;
                 break;
             }
-            //else if(n%i!=0)
-            //{
-            // result.InnerHtml = "yay!! prime number";
-            //}
-        }
-        if (a)
-        {
-            result.InnerHtml = "not a prime";
 
-        }else
-            {
-                result.InnerHtml = "yay!! prime number";
-            }
+        }
+        if (a) { result.InnerHtml = "yay!! prime number"; }
+           
     }
 </script>
 
