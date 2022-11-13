@@ -2,8 +2,7 @@
 
 import java.awt.*;
 
-/* <applet code="Smileface.class" height=400 width=350>
-</applet> */
+/* <applet code="Smileface.class" height=400 width=350></applet> */
 public class s9b extends java.applet.Applet implements Runnable {
    Thread t;
    int f;
@@ -29,12 +28,12 @@ public class s9b extends java.applet.Applet implements Runnable {
    }
 
    public void paint(Graphics g) {
-      g.drawOval(100, 100, 100, 100);
-      g.fillOval(120, 125, 20, 20);
-      g.fillOval(160, 125, 20, 20);
-      g.drawLine(150, 125, 150, 150);
+      g.drawOval(100, 100, 100, 100); //face
+      g.fillOval(120, 125, 20, 20); //left eye
+      g.fillOval(160, 125, 20, 20); //right eye
+      g.drawLine(150, 125, 150, 150); //nose 
       if (f == 0) {
-         g.drawArc(130, 135, 40, 40, 0, -180);
+         g.drawArc(130, 135, 40, 40, 0, -180); 
          f = 1;
       } else {
          g.drawArc(130, 170, 40, 40, 0, 180);

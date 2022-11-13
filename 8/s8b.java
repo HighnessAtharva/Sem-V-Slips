@@ -47,8 +47,6 @@ class s8b extends Frame implements ActionListener {
         
     }
 
-    
-  
 
     public void actionPerformed(ActionEvent ae) {
         try (Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);

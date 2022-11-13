@@ -8,6 +8,7 @@ public class Slip7b extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 		PrintWriter out = response.getWriter();
 		response.setContentType("text/html");
+		
 		try {
 			String s = request.getParameter("marks");
 			int m = Integer.parseInt(s);
