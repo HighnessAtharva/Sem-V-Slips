@@ -15,17 +15,14 @@ public class s18b {
             
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             
-            
             System.out.println("Enter roll no : ");
             int id = Integer.parseInt(br.readLine());
             System.out.println("Enter name : ");
             String name = br.readLine();
             System.out.println("Enter per : ");
             int percentage = Integer.parseInt(br.readLine());
-
             
-            String query = "insert into students2 values(?,?,?)";
-            PreparedStatement ps = conn.prepareStatement(query);
+            PreparedStatement ps = conn.prepareStatement("insert into students2 values(?,?,?)");
             ps.setInt(1, id);
             ps.setString(2, name);
             ps.setInt(3, percentage);

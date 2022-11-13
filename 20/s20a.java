@@ -20,6 +20,13 @@ class s20a {
             }
             System.out.println("Number of records in Table are:" + cnt);
 
+            /*Could also do:
+             * 
+             * rs.last();
+             * int cnt = rs.getRow();
+             * System.out.println("Number of records in Table are:" + cnt);
+             */
+
         } catch (Exception e) {
             System.out.println(e);
 

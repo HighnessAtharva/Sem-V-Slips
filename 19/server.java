@@ -12,7 +12,7 @@ public class server {
             Socket client = ss.accept();
             System.out.println("Client Connected");
             DataOutputStream dos = new DataOutputStream(client.getOutputStream());
-            dos.writeUTF("Message recieved from Server: Current Time on Server's machine: " + new Date().toString());// write client
+            dos.writeUTF("Message recieved from Server: Current Time on Server's machine: " + new Date().toString());
             client.close();
             ss.close();
         } catch (IOException ie) {

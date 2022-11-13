@@ -4,8 +4,7 @@
 class PrintDemo {
     public void printCount() {
         try {
-
-            for (int i = 5; i > 0; i--) {
+            for (int i =0 ; i<=5 ; i++) {
                 System.out.println("Counter: " + i);
             }
         } catch (Exception e) {
@@ -25,13 +24,6 @@ class ThreadDemo extends Thread {
         PD = pd;
     }
 
-    public void run() {
-        synchronized (PD) {
-            PD.printCount();
-        }
-        System.out.println("Thread " + threadName + " exiting.");
-    }
-
     public void start() {
         System.out.println("Starting " + threadName);
         if (t == null) {
@@ -39,21 +31,30 @@ class ThreadDemo extends Thread {
             t.start();
         }
     }
+    
+    public void run() {
+        synchronized (PD) {
+            PD.printCount();
+        }
+        System.out.println("Thread " + threadName + " exiting.");
+    }
+
+ 
 }
 
 public class s18a {
     public static void main(String a[]) {
         PrintDemo PD = new PrintDemo();
-        ThreadDemo T1 = new ThreadDemo("Thread - 1 ", PD);
-        ThreadDemo T2 = new ThreadDemo("Thread - 2 ", PD);
+        ThreadDemo T1 = new ThreadDemo("First ", PD);
+        ThreadDemo T2 = new ThreadDemo("Second", PD);
         T1.start();
         T2.start();
-        // wait for threads to end
-        try {
-            T1.join();
-            T2.join();
-        } catch (Exception e) {
-            System.out.println(e);
-        }
+        // // wait for threads to end
+        // try {
+        //     T1.join();
+        //     T2.join();
+        // } catch (Exception e) {
+        //     System.out.println(e);
+        // }
     }
 }
