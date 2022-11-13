@@ -14,23 +14,24 @@ namespace CSharpMYSQL
     {
         static void Main(string[] args)
         {
-            string server = "localhost";
-            string database = "booksdb";
-            string username = "root";
-            string password = "";
-            string constring = "SERVER=" + server + ";" + "DATABASE=" + database + ";" + "UID=" + username + ";" + "PASSWORD=" + password + ";";
-            MySqlConnection conn = new MySqlConnection(constring);
+            MySqlConnection conn = new MySqlConnection("SERVER=localhost; DATABASE=booksdb;UID=root;PASSWORD=''");
             conn.Open();
 
             string query = "select * from books where bookname ='ASP dot NET'";
             MySqlCommand cmd = new MySqlCommand(query, conn);
             MySqlDataReader reader = cmd.ExecuteReader();
 
-
-            while (reader.Read())
+            if (reader.HasRows)
             {
                 Console.WriteLine("Searched book exists");
-                Console.WriteLine(reader["bookname"]);
+                while (reader.Read())
+                {
+                    Console.WriteLine(reader["bookname"]);
+                }
+            }
+            else
+            {
+                Console.WriteLine("Searched book does not exist");
             }
 
             Console.ReadLine();

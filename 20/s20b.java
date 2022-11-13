@@ -2,7 +2,7 @@
 
 import java.awt.*;
 
-/*<applet code="BounsingBall.class" height=400 width=350></applet>*/
+/*<applet code="s20b.class" height=400 width=350></applet>*/
 public class s20b extends java.applet.Applet implements Runnable {
     Thread t;
     int f, y, f1, f2, f3;
@@ -50,8 +50,8 @@ public class s20b extends java.applet.Applet implements Runnable {
                 g.setColor(Color.orange);
             g.fillOval(150, y + 10, 20, 20);
             if (y == 400) {
-                f1++;
-                f = 1;
+                f1++;       // change color
+                f = 1;      // change direction
             }
         }
         if (f == 1) {
@@ -67,8 +67,8 @@ public class s20b extends java.applet.Applet implements Runnable {
                 g.setColor(Color.orange);
             g.fillOval(150, y - 10, 20, 20);
             if (y == 0) {
-                f1++;
-                f = 0;
+                f1++;       // change color
+                f = 0;      // change direction
             }
         }
     }
