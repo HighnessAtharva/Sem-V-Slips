@@ -4,8 +4,8 @@
     void randomize(object sender, EventArgs e)
     {
        string[] names = new string[] { "This is a really really really really really really really really long string damnnnn woooooooooooooooooooooooooooooooooooooooooooooooooooooooo", ":)", "hello there" };
-        Random rnd = new Random();
-        int index = rnd.Next(names.Length);
+
+        int index = new Random().Next(names.Length);
         text1.InnerHtml = names[index];
 
     }

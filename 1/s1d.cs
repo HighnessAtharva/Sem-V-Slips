@@ -12,7 +12,7 @@ class Student
 
     public Student()
     {
-        //defualt values if none are provided
+        //default values if none are provided
         this.rollNumber = 0;
         this.name = "STUDENT";
         count += 1;

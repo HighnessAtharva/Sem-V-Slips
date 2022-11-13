@@ -14,7 +14,7 @@ namespace CSharpMYSQL
     {
         static void Main(string[] args)
         {
-       
+
             MySqlConnection conn = new MySqlConnection("SERVER=localhost; DATABASE=sampledb;UID=root;PASSWORD=''");
             conn.Open();
 

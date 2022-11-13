@@ -8,19 +8,15 @@
         n = number;
         for (int i = 1; i < number; i++)
         {
-
             if (number % i == 0)
             {
                 sum = sum + i;
             }
         }
-        if (sum == n)
-        {
+        if (sum == n){
             result.InnerHtml = "Entered number is a perfect number";
-
         }
-        else
-        {
+        else{
             result.InnerHtml = "Entered number is not a perfect number";
         }
     }
@@ -34,12 +30,8 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-            <input type="text" id="n1" runat="server" placeholder="Check for perfect number" />
-            <br>
-            <input type="submit" runat="server" id="btn1" onserverclick="checkforperfect" />
-            <br>
-        </div>
+            <input type="text" id="n1" runat="server" placeholder="Check for perfect number" /> <br>
+            <input type="submit" runat="server" id="btn1" onserverclick="checkforperfect" /> <br>
     </form>
     <h3>Perfect Number Test</h3>
     <p id="result" runat="server"></p>

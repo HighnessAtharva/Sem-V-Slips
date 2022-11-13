@@ -12,27 +12,19 @@ namespace Slip1C
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-
-            string gender;
-
+            String gender="";
             message.Text = "";
-           
-            if (RadioButton1.Checked)
-            {
+
+            if (RadioButton1.Checked){
                 gender = "boi";
-                message.Text = "I am <b>" + Request["myname"] + "</b>, my age is <b>" + Request["myage"] + "</b> and I am a <b>" + gender + "</b>";
             }
-            if (RadioButton2.Checked)
-            {
+
+            if (RadioButton2.Checked){
                 gender = "gurl";
-                message.Text = "I am <b>" + Request["myname"] + "</b>, my age is <b>" + Request["myage"] + "</b> and I am a <b>" + gender + "</b>";
             }
-
+            message.Text = "I am <b>" + Request["myname"] + "</b>, my age is <b>" + Request["myage"] + "</b> and I am a <b>" + gender + "</b>";
+            
             //message.Text = "I am " + Request["myname"] + ", my age is: " +Request["myage"] + "and I am a " + gender;
-
         }
-
     }
-
-    
 }

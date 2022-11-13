@@ -16,6 +16,25 @@ namespace Slip1C
                 Calendar1.Visible = false;
             }
         }
-        
+
+        protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
+        {
+            Calendar1.Visible = !Calendar1.Visible;
+        }
+        protected void Calendar1_SelectionChanged(object sender, EventArgs e)
+        {
+            TextBox1.Text = Calendar1.SelectedDate.ToShortDateString();
+            String birthdate = Calendar1.SelectedDate.Day.ToString();
+            if (birthdate == "5")
+            {
+                result.InnerText = "Happy Birthday";
+            }
+            else
+            {
+                result.InnerText = "Not your birthday today";
+            }
+            Calendar1.Visible = false;
+        }
+
     }
 }
