@@ -13,6 +13,7 @@
         {
             result.InnerHtml = "Your Grade : <b> First Class </b>";
         }
+         else if (num >= 40 && num<60)
         {
             result.InnerHtml = "Your Grade : <b> Second Class </b>";
         }

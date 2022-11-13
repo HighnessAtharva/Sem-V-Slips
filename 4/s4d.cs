@@ -60,10 +60,9 @@ class OverloadTest
         Box Box3 = new Box();   // Declare Box3 of type Box
         int volume = 0;    // Store the volume of a box here
 
-
         // volume of box 1
         volume = Box1.getVolume();
-        Console.WriteLine("Volume of Box1 : {0}", volume);
+         Console.WriteLine("Volume of Box1 : {0}", volume);
 
         // volume of box 2
         volume = Box2.getVolume();
@@ -75,7 +74,6 @@ class OverloadTest
         // volume of box 3
         volume = Box3.getVolume();
         Console.WriteLine("Volume of Box3 : {0}", volume);
-
 
         Box3 = ++Box3;
         volume = Box3.getVolume();

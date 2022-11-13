@@ -68,13 +68,11 @@ class OverloadTest
         volume = Box2.getVolume();
         Console.WriteLine("Volume of Box2 : {0}", volume);
 
-
         Box3 = Box1 * Box2;
 
         // volume of box 3
         volume = Box3.getVolume();
         Console.WriteLine("Volume of Box3 (Product of 2 boxes): {0}", volume);
-
 
         Box4 = ++Box1;
         volume = Box4.getVolume();

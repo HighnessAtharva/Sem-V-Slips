@@ -9,20 +9,14 @@ class Test
     // Main Method
     public static void Main()
     {
-
-        // string type
         String str = "Berserk and Neon Genesis Evangelion are top-tier shows.";
         String userStr;
         Console.WriteLine("Enter a string to search for in a sentence: ");
         userStr = Console.ReadLine();
 
         if (str.Contains(userStr))
-        {
             Console.WriteLine("Found");
-        }
         else
-        {
             Console.WriteLine("Not Found");
-        }
     }
 }

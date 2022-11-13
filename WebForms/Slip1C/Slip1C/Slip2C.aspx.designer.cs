@@ -30,7 +30,7 @@ namespace Slip1C
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText n1;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl n1;
 
         /// <summary>
         /// btn1 control.

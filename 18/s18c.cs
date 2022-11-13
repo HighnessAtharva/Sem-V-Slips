@@ -11,7 +11,6 @@ public class PrimeNumberExample
         string finalType = "Special Character";
         if (!string.IsNullOrEmpty(o))
         {
-
             // Check integer before Decimal
             int tryInt;
             decimal tryDec;

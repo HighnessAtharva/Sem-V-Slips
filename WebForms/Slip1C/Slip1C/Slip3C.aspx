@@ -42,6 +42,8 @@
             ControlToValidate="firstval" Display="Dynamic" ErrorMessage="Enter valid value" ForeColor="Red"
             Operator="LessThan" Type="Integer"></asp:CompareValidator>
 
+
+
         <appsettings>
             <add key="ValidationSettings:UnobtrusiveValidationMode" value="None" />
         </appsettings>

@@ -15,8 +15,7 @@ namespace S11D
     {
         static void Main(string[] args)
         {
-            string constring = "SERVER=localhost;DATABASE=demo;UID=root;PASSWORD=''";
-            MySqlConnection conn = new MySqlConnection(constring);
+            MySqlConnection conn = new MySqlConnection("SERVER=localhost;DATABASE=demo;UID=root;PASSWORD=''");
             conn.Open();
 
             string query = "select * from students2";
@@ -26,13 +25,8 @@ namespace S11D
             Console.WriteLine("Roll No \t Student \tGrade");
             while (reader.Read())
             {
-                //Using Console.Write to format it in single line instead of Console.WriteLine
-                Console.Write(reader["id"] + "\t\t");
-                Console.Write(reader["name"] + "\t\t");
-                Console.Write(reader["percentage"] + "\t\t");
-                Console.WriteLine();
+                Console.WriteLine("{0}     {1}       {2} ",reader["id"], reader["name"], reader["percentage"]);   
             }
-            
             Console.ReadLine();
         }
     }
