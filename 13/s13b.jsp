@@ -1,25 +1,31 @@
 <%@ page errorPage="error.jsp" %>
-<html>
+    <html>
+
     <body>
-        <H1><center>Result for <%=request.getParameter("a1")%></center></H1>
+        <H1>
+            <center>Result for
+                <%=request.getParameter("a1")%>
+            </center>
+        </H1>
         <%
-            String num1=request.getParameter("t1");  
-            String num2=request.getParameter("t2");  
-  
-            int i=Integer.parseInt(num1);  
-            int j=Integer.parseInt(num2);  
+         
+            int i=Integer.parseInt(request.getParameter("t1"));  
+            int j=Integer.parseInt(request.getParameter("t2"));  
+            String str=request.getParameter("a1"); 
 
             int k=0;
-            String str=request.getParameter("a1");
-            if(str.equals("add"))
+            
+            if(str.equals("Addition"))
                 k=i+j;
-            if(str.equals("sub"))
+            if(str.equals("Subtraction"))
                 k=i-j;
-            if(str.equals("mul"))
+            if(str.equals("Multiplication"))
                 k=i*j;
-            if(str.equals("div"))
+            if(str.equals("Division"))
                 k=i/j;
         %>
-        Result is: <%=k%>
+            Result is:
+            <%=k%>
     </body>
-</html>
+
+    </html>

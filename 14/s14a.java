@@ -1,8 +1,6 @@
 // Write a program to demonstrate the join() in multithreading 
 
 public class s14a extends Thread {
-    // invoking the start() method of the Thread class begins the run() method of
-    // the thread.
     public void run() {
         for (int i = 1; i <= 4; i++) {
             try {
@@ -23,7 +21,7 @@ public class s14a extends Thread {
         // thread t1 starts
         t1.start();
 
-        // starts second thread when first thread t1 is died.
+        // starts second thread when first thread t1 dies
         try {
             t1.join();
 

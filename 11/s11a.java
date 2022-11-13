@@ -21,9 +21,9 @@ class s11a extends Frame implements Runnable {
 
         addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent e) {
-                dispose();
+                System.exit(0);
             }
-        });
+        });        
     }
 
     public void run() {
