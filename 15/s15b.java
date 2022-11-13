@@ -17,7 +17,7 @@ class s15b extends Frame implements Runnable {
         setVisible(true);
         t = new Thread(this);
         t.start();
-        x = 5;
+        x = 0;
         y = 200;
         side = 1;
         addWindowListener(new WindowAdapter() {
@@ -33,32 +33,25 @@ class s15b extends Frame implements Runnable {
                 t.sleep(50);
                 l1.setBounds(x += 5, y -= 5, 70, 15);
                 add(l1);
-                if (y == 20)
-                    side = 2;
+                if (y == 0) side = 2;
             }
             if (side == 2) {
                 t.sleep(50);
                 l1.setBounds(x += 5, y += 5, 70, 15);
                 add(l1);
-                if (y == 200)
-                    side = 3;
+                if (y == 200) side = 3;
             }
             if (side == 3) {
                 t.sleep(50);
                 l1.setBounds(x -= 5, y += 5, 70, 15);
                 add(l1);
-                if (y == 400)
-                    side = 4;
+                if (y == 400) side = 4;
             }
             if (side == 4) {
                 t.sleep(50);
                 l1.setBounds(x -= 5, y -= 5, 70, 15);
                 add(l1);
-                if (x == 0) {
-                    side = 1;
-                    x = 0;
-                    y = 200;
-                }
+                if (y == 200) side = 1;
             }
         } catch (Exception e) {
             System.out.println(e);

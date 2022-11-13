@@ -4,6 +4,8 @@
 -	movePrevious
 -	moveLast   	*/
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.sql.*;
 import java.util.*;
 
@@ -30,6 +32,7 @@ class s5a {
             do {
                 System.out.println("1 First \n2 last \n3 next \n4 prev \n0 Exit");
                 ch = s.nextInt();
+                
                 switch (ch) {
                     case 1:
                         rs.first();

@@ -9,7 +9,6 @@ public class s14a extends Thread {
             } catch (Exception e) {
                 System.out.println(e);
             }
-
         }
     }
 
@@ -31,6 +30,5 @@ public class s14a extends Thread {
         } catch (Exception e) {
             System.out.println(e);
         }
-
     }
 }
